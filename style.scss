@@ -324,7 +324,7 @@ html{
                                 fill: #2196F3;
                             }
                         }
-                        &::before{
+                        &__before{
                             position: absolute;
                             content: "";
                             top: 0;
@@ -338,11 +338,11 @@ html{
                         }
                         &:hover{
                             cursor: pointer;
-                            color: #fff;
+                            color: #fff !important;
                             svg{
-                                fill: #fff;
+                                fill: #fff !important;
                             }
-                            &::before{
+                            .home__right__links__right__before{
                                 background-color: #2196F3;
                                 width: 180%;
                             }

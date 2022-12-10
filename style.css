@@ -330,7 +330,7 @@ html body .switcher svg {
   height: 15px;
   fill: #2196F3;
 }
-.sections #home .home__right__links__right::before {
+.sections #home .home__right__links__right__before {
   position: absolute;
   content: "";
   top: 0;
@@ -344,12 +344,12 @@ html body .switcher svg {
 }
 .sections #home .home__right__links__right:hover {
   cursor: pointer;
-  color: #fff;
+  color: #fff !important;
 }
 .sections #home .home__right__links__right:hover svg {
-  fill: #fff;
+  fill: #fff !important;
 }
-.sections #home .home__right__links__right:hover::before {
+.sections #home .home__right__links__right:hover .home__right__links__right__before {
   background-color: #2196F3;
   width: 180%;
 }
