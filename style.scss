@@ -11,6 +11,9 @@ html{
         min-height: 100%;
         font-size: 42px;
         color: #555;
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 15px;
         .switcher{
             display: block;
             z-index: 111111;
@@ -41,6 +44,120 @@ html{
     }
     100%{
         transform: rotate(359deg);
+    }
+}
+
+#switcherModal{
+    background: #fff;
+    position: fixed;
+    display: none;
+    top: 200px;
+    right: 0;
+    direction: ltr;
+    z-index: 111111;
+    width: 220px;
+    margin-right: 0;
+    border-radius: 0 5px 5px 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    box-shadow: 0px 0px 4px 0px rgb(51 51 51 / 20%);
+    .sitcher__modal{
+        padding: 16px;
+        overflow: hidden;
+        h4{
+            padding: 5px 0;
+            border-bottom: #ccc 1px solid;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+        ul{
+            padding: 0!important;
+            margin: 0!important;
+            list-style-type: none;
+            li{
+                text-transform: uppercase;
+                margin-bottom: 0;
+                font-size: 12px;
+                display: inline-block;
+                .colo{
+                    border-radius: 2px;
+                    cursor: pointer;
+                    display: inline-block;
+                    margin: 4px 2px;
+                    width: 30px;
+                    height: 30px;
+                    img{
+                        vertical-align: middle;
+                        border-style: none;
+                    }
+                }
+            }
+        }
+        &__button{
+            background-color: #82b440;
+            text-transform: capitalize;
+            font-size: 16px;
+            border-radius: 4px;
+            font-weight: 700;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: none !important;
+            height: 46px;
+            line-height: 46px;
+            color: #fff;
+            padding: 0 33px;
+            outline: none !important;
+            overflow: hidden;
+            position: relative;
+            border: 0;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            span{
+                position: relative;
+                z-index: 2;
+                svg{
+                    padding-right: 11px;
+                    height: 16px !important;
+                }
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                top: 0;
+                height: 102%;
+                left: -25%;
+                width: 0%;
+                background-color: #555;
+                transform: skew(-22deg);
+                transition-duration: .6s;
+                z-index: 1;
+            }
+            &:hover{
+                &::after{
+                    width: 180%;
+                }
+            }
+        }
+        #hideSwitcherModal{
+            cursor: pointer;
+            font-size: 38px;
+            margin-bottom: 0px;
+            color: #999;
+            border: 1px solid #eee;
+            border-right: 0;
+            position: absolute;
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            left: -40px;
+            text-align: center;
+            top: 0;
+            border-radius: 4px 0 0 4px;
+            line-height: 38px;
+            border-left: 0;
+        }
     }
 }
 
