@@ -8,8 +8,38 @@
 html{
     height: 100%;
     body{
-    min-height: 100%;
-    font-size: 42px;
+        min-height: 100%;
+        font-size: 42px;
+        .switcher{
+            display: block;
+            z-index: 111111;
+            margin-left: 0px;
+            position: fixed;
+            right: 0;
+            top: 200px;
+            background: #fff;
+            border: #ccc 1px solid;
+            box-shadow: #ccc 0 0 2px;
+            border-right: 0;
+            font-size: 20px;
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 4px;
+            padding: 10px 16px 10px 14px;
+            cursor: pointer;
+            svg{
+                font-size: 25px;
+                fill: #222;
+                animation: spin 2s infinite linear;
+            }
+        }
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(359deg);
     }
 }
 
