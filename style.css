@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+html body {
+  min-height: 100%;
+  font-size: 42px;
+}
+
+.sections #home {
+  background-image: url("./images/leftimage-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+.sections #home::after {
+  background-color: rgba(0, 0, 0, 0.85);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 0;
+  content: "";
+  position: absolute;
+}
+.sections #home .home {
+  height: 100vh;
+  width: 100%;
+  display: table;
+  margin-left: 50vw;
+  max-width: 550px;
+}
+.sections #home .home img {
+  position: fixed;
+  border-radius: 50%;
+  max-width: 320px;
+  left: calc(50vw - 360px);
+  top: calc(50vh - 160px);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+.sections #home .home__right {
+  z-index: 13;
+  position: relative;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+.sections #home .home__right h3 {
+  color: #eee;
+  font-weight: 400;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.sections #home .home__right__text {
+  color: #fff;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 500;
+  margin: 19px 0 10px;
+  white-space: nowrap;
+  position: relative;
+  text-transform: uppercase;
+}
+.sections #home .home__right__text #homeChangeText {
+  color: #2196F3;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 42px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.sections #home .home__right p {
+  color: #eee;
+  margin: 11px 0 23px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.sections #home .home__right__links {
+  text-align: left !important;
+}
+.sections #home .home__right__links__left {
+  background-color: #2196F3;
+  border-radius: 26px;
+  font-weight: 500;
+  height: 46px;
+  line-height: 46px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 33px;
+  outline: none !important;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  border: 0;
+  box-shadow: none !important;
+  margin-right: 25px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.sections #home .home__right__links__left span {
+  position: relative;
+  z-index: 2;
+  line-height: 46px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.sections #home .home__right__links__left span svg {
+  padding-right: 11px;
+  display: inline-block;
+  height: 15px;
+  fill: #fff;
+}
+.sections #home .home__right__links__left:hover {
+  cursor: pointer;
+}
+.sections #home .home__right__links__left:hover::before {
+  width: 180%;
+}
+.sections #home .home__right__links__left:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 102%;
+  left: -25%;
+  width: 0%;
+  background-color: #555;
+  transform: skew(-22deg);
+  transition-duration: 0.6s;
+  z-index: 1;
+}
+.sections #home .home__right__links__right {
+  border: 1px solid #2196F3;
+  color: #2196F3;
+  background-color: transparent;
+  box-shadow: none !important;
+  border-radius: 26px;
+  font-weight: 500;
+  height: 46px;
+  line-height: 46px;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 0 33px;
+  outline: none !important;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.sections #home .home__right__links__right span {
+  position: relative;
+  z-index: 2;
+  line-height: 46px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.sections #home .home__right__links__right span svg {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 11px;
+  height: 15px;
+  fill: #2196F3;
+}
+.sections #home .home__right__links__right::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 102%;
+  left: -25%;
+  width: 0%;
+  background-color: #555;
+  transform: skew(-22deg);
+  transition-duration: 0.6s;
+  z-index: 1;
+}
+.sections #home .home__right__links__right:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.sections #home .home__right__links__right:hover svg {
+  fill: #fff;
+}
+.sections #home .home__right__links__right:hover::before {
+  background-color: #2196F3;
+  width: 180%;
+}
