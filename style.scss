@@ -10,6 +10,7 @@ html{
     body{
         min-height: 100%;
         font-size: 42px;
+        color: #555;
         .switcher{
             display: block;
             z-index: 111111;
@@ -41,6 +42,11 @@ html{
     100%{
         transform: rotate(359deg);
     }
+}
+
+
+.header{
+    
 }
 
 .sections{

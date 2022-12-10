@@ -12,6 +12,7 @@ html {
 html body {
   min-height: 100%;
   font-size: 42px;
+  color: #555;
 }
 html body .switcher {
   display: block;
